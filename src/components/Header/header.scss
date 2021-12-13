@@ -1,0 +1,28 @@
+@import '../../public/variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid $color-dark-3;
+  background: $color-dark-2;
+
+  &__title {
+    margin: 0;
+    font-size: 28px;
+    color: $color-light;
+
+    span {
+      font-size: 75%;
+      background: $color-dark-1;
+      border: 1px solid $color-dark-3;
+      padding: 10px;
+      border-radius: 50%;
+      width: 46px;
+      height: 46px;
+      line-height: 46px;
+    }
+  }
+}

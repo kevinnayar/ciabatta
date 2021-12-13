@@ -1,0 +1,28 @@
+$color-light: #ccc;
+$color-mid: #818181;
+
+$color-dark-1: #212124;
+$color-dark-2: #1A1A1C;
+$color-dark-3: #121214;
+
+$color-pop: rgb(9, 113, 241);
+
+$transition-one: all 0.2s ease-in-out;
+$transition-two: all 0.5s ease-in-out 0.2s;
+
+$font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$font-mono: "Courier New", "Lucida Sans Typewriter", Consolas, monospace;
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

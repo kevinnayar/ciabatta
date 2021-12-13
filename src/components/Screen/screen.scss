@@ -1,0 +1,149 @@
+@import '../../public/variables.scss';
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 120px);
+
+  .card {
+    min-width: 360px;
+    margin: 24px;
+    padding: 24px 36px;
+    background: $color-dark-3;
+    border-radius: 12px;
+    position: relative;
+    animation: 0.2s ease-in-out 0s 1 fadeUp;
+
+    &__list {
+      li {
+        font-size: 16px;
+        margin: 0 0 6px;
+
+        span {
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .exercise {
+      &__title {
+        display: flex;
+        margin: 12px 0;
+        align-items: center;
+
+        i {
+          margin-right: 8px;
+        }
+
+        p {
+          font-size: 16px;
+          margin: 0;
+          opacity: 0.8;
+        }
+
+        &.complete {
+          p {
+            text-decoration: line-through;
+          }
+        }
+
+        &.active {
+          p {
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 1;
+            background: $color-light;
+            color: $color-dark-1;
+            padding: 3px 8px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+
+    .time-state {
+      display: flex;
+      border-left: 1px solid $color-dark-1;
+      margin-top: 24px;
+
+      &__cycle,
+      &__set,
+      &__times {
+        flex-basis: 33.33%;
+        border-top: 1px solid $color-dark-1;
+        border-right: 1px solid $color-dark-1;
+        border-bottom: 1px solid $color-dark-1;
+        text-align: center;
+        font-family: $font-mono;
+        display: flex;
+        flex-direction: column;
+
+        .key {
+          font-size: 13px;
+          margin: 4px auto;
+          border-bottom: 1px solid $color-dark-1;
+          width: 100%;
+          margin-block-end: 0;
+          text-transform: uppercase;
+        }
+
+        .value {
+          font-size: 126px;
+          width: 100%;
+          margin-block-end: 0;
+          line-height: 1;
+        }
+      }
+
+      &__cycle,
+      &__set {
+        .value {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &__times {
+        .value {
+          line-height: 1.5;
+        }
+
+        &--rest {
+          .key {
+            border-top: 1px solid $color-dark-1;
+          }
+        }
+
+        .value {
+          text-align: center;
+          font-size: 46px;
+        }
+      }
+      
+    }
+
+    &__button {
+      &.button--start {
+        width: 100%;
+        margin: 16px auto 0;
+      }
+
+      &.button--close {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: -20px;
+        top: -20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid $color-dark-3;
+      }
+    }
+  }
+}

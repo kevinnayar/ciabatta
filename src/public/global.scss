@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  padding: 0;
+  margin: 0;
+  background: $color-dark-1;
+  color: $color-mid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-block-start: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 2em;
+  line-height: 1.71;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  border-radius: 8px;
+  outline: none;
+  color: $color-light;
+  height: 50px;
+  background: $color-pop;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: $transition-one;
+
+  &:hover {
+    background: lighten($color-pop, 10);
+    box-shadow: 0 0 20px transparentize($color-pop, .7);
+  }
+}

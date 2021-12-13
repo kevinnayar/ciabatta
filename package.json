@@ -1,0 +1,57 @@
+{
+  "name": "ciabatta",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "NODE_ENV=development jest --watch",
+    "start": "parcel ./src/public/index.html"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "@svgr/parcel-plugin-svgr": "^5.1.0",
+    "@types/react": "^17.0.17",
+    "@types/react-dom": "^16.9.8",
+    "@types/uuid": "^8.3.0",
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^9.0.0",
+    "eslint-config-airbnb": "18.2.1",
+    "luxon": "^2.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.11",
+    "typescript": "^4.2.4",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.0.0",
+    "@parcel/transformer-sass": "^2.0.0",
+    "@parcel/transformer-typescript-tsc": "^2.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/luxon": "^2.0.0",
+    "@types/react-router-dom": "^5.1.6",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^25.3.0",
+    "parcel": "^2.0.0",
+    "ts-jest": "^25.1.0",
+    "tslint": "^6.1.1"
+  },
+  "author": "Kevin Nayar"
+}

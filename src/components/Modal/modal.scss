@@ -1,0 +1,88 @@
+@import '../../public/variables.scss';
+
+.modal {
+  position: fixed;
+  background: $color-pop;
+  transition: $transition-one;
+  color: $color-light;
+
+  &.hidden {
+    width: 0;
+    height: 0;
+    left: 50%;
+    bottom: 0;
+  }
+
+  &.visible {
+    width: calc(100% + 200px);
+    height: calc(100% + 200px);
+    left: -100px;
+    bottom: -100px;
+    border-radius: 100px;
+    padding: 160px;
+  }
+
+  &__content {
+    max-width: 620px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .settings-options {
+      display: flex;
+
+      &__item {
+        width: 40px;
+        text-align: center;
+        cursor: pointer;
+        transition: $transition-one;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+
+  &__action {
+    .button {
+      border-radius: 50%;
+      border: 2px solid $color-light;
+      color: $color-light;
+      background: $color-pop;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      bottom: 136px;
+      left: 50%;
+      margin-left: -44px;
+      transition: $transition-one;
+
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &.hidden {
+    .modal_content {
+      display: none;
+    }
+
+    .modal__action {
+      .button {
+        bottom: -100px;
+      }
+    }
+  }
+}
