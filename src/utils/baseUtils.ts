@@ -48,35 +48,40 @@ export type WorkoutConfig = {
   numCycles: 2 | 3 | 4 | 5;
 };
 
+export function getExercises(): ExerciseMap {
+  return {...EXERCISES};
+}
+
 export function getWorkout(config: WorkoutConfig): string[] {
   const { weights, numCycles } = config;
+  const exercises = getExercises();
 
   let list: string[];
   switch (weights) {
     case 'none': {
-      list = [...EXERCISES.noWeights];
+      list = exercises.noWeights;
       break;
     }
     case 'with': {
-      list = [...EXERCISES.withWeights];
+      list = exercises.withWeights;
       break;
     }
     case 'both': {
-      list = [...EXERCISES.withWeights, ...EXERCISES.noWeights];
+      list = [...exercises.withWeights, ...exercises.noWeights];
       break;
     }
     default: // do nothing
   }
 
-  const exercises: Set<string> = new Set();
+  const workout: Set<string> = new Set();
 
-  while (exercises.size < numCycles) {
+  while (workout.size < numCycles) {
     const index = Math.floor(Math.random() * list.length);
     const exercise = list[index];
-    exercises.add(exercise);
+    workout.add(exercise);
   }
 
-  return [...exercises.values()];
+  return [...workout.values()];
 }
 
 export type ExerciseTimeState = {
