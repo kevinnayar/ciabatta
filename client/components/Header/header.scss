@@ -1,4 +1,4 @@
-@import '../../public/variables.scss';
+@import '../../styles/variables.scss';
 
 .header {
   display: flex;
@@ -6,18 +6,18 @@
   justify-content: center;
   height: 60px;
   width: 100%;
-  border-bottom: 1px solid $color-dark-3;
-  background: $color-dark-2;
+  border-bottom: 1px solid $color-bg-3;
+  background: $color-bg-2;
 
   &__title {
     margin: 0;
     font-size: 28px;
-    color: $color-light;
+    color: $color-text;
 
     span {
       font-size: 75%;
-      background: $color-dark-1;
-      border: 1px solid $color-dark-3;
+      background: $color-bg-1;
+      border: 1px solid $color-bg-3;
       padding: 10px;
       border-radius: 50%;
       width: 46px;

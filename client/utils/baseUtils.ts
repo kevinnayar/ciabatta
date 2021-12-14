@@ -43,14 +43,14 @@ const EXERCISES: ExerciseMap = {
   ],
 };
 
+export function getExercises(): ExerciseMap {
+  return {...EXERCISES};
+}
+
 export type WorkoutConfig = {
   weights: 'none' | 'with' | 'both';
   numCycles: 2 | 3 | 4 | 5;
 };
-
-export function getExercises(): ExerciseMap {
-  return {...EXERCISES};
-}
 
 export function getWorkout(config: WorkoutConfig): string[] {
   const { weights, numCycles } = config;
@@ -116,8 +116,8 @@ export function getExerciseTimeState(numCycles: number, seconds: number): null |
   return timeState;
 }
 
-function play(src: string) {
-  const audio = new Audio(src);
+function play(filePath: string) {
+  const audio = new Audio(filePath);
   audio.play();
 }
 

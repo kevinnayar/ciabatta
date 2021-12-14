@@ -8,8 +8,8 @@ body {
   font-family: $font-main;
   padding: 0;
   margin: 0;
-  background: $color-dark-1;
-  color: $color-mid;
+  background: $color-bg-1;
+  color: $color-text;
 }
 
 h1,
@@ -35,7 +35,7 @@ ul {
 .button {
   border-radius: 8px;
   outline: none;
-  color: $color-light;
+  color: $color-text;
   height: 50px;
   background: $color-pop;
   outline: none;

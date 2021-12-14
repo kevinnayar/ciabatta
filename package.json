@@ -2,11 +2,11 @@
   "name": "ciabatta",
   "version": "1.0.0",
   "scripts": {
+    "start": "parcel ./client/index.html",
+    "build": "rm -rf ./dist && mkdir ./dist && mkdir ./dist/client && parcel build ./client/index.html --dist-dir ./dist/client",
     "test": "NODE_ENV=development jest",
     "test:watch": "NODE_ENV=development jest --watch",
-    "start": "parcel ./src/public/index.html",
-    "build": "rm -rf ./dist && parcel build ./src/public/index.html",
-    "deploy": "aws s3 sync ./dist s3://ciabatta --profile kaynay",
+    "deploy": "aws s3 sync ./dist/client s3://ciabatta --profile kaynay",
     "release": "yarn test && yarn build && yarn deploy"
   },
   "jest": {

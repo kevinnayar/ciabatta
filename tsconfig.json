@@ -9,7 +9,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
-    "outDir": "dist",
+    "outDir": "dist/client",
     "types": [
       "node",
       "jest"

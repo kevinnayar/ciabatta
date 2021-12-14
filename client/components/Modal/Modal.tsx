@@ -1,5 +1,5 @@
 import React from 'react';
-import { WorkoutConfig } from 'src/utils/baseUtils';
+import { WorkoutConfig } from '../../utils/baseUtils';
 import './modal.scss';
 
 type ModalContentSettingsProps = {
@@ -30,8 +30,7 @@ const ModalContentSettings = ({ workoutConfig, setWorkoutConfig }: ModalContentS
 
   return (
     <div className="modal__content settings">
-      <h2>Customize</h2>
-      <h3>Exercises with weights?</h3>
+      <h2>Exercises with weights?</h2>
       <div className="settings-options">
         {weightTuples.map(([text, id]) => (
           <div className="settings-options__item" key={id} onClick={() => setWeights(id)}>
@@ -42,7 +41,7 @@ const ModalContentSettings = ({ workoutConfig, setWorkoutConfig }: ModalContentS
           </div>
         ))}
       </div>
-      <h3>How many cycles?</h3>
+      <h2>How many cycles?</h2>
       <div className="settings-options">
         {numCyclesOpts.map((num) => (
           <div className="settings-options__item" key={num} onClick={() => setNumCycles(num)}>
