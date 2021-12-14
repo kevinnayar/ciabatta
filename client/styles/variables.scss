@@ -1,8 +1,20 @@
-$color-text: #ccc;
+$color-pop: #0971f1;
+
+/* dark mode */
+$color-text: #cccccc;
+$color-text-alt: #cccccc;
 $color-bg-1: #212124;
 $color-bg-2: #1A1A1C;
 $color-bg-3: #121214;
-$color-pop: rgb(9, 113, 241);
+
+/* light mode */
+// $color-text: #121214;
+// $color-text-alt: #fefefe;
+// $color-bg-3: #fefefe;
+// $color-bg-2: #f3f3f3;
+// $color-bg-1: #efefef;
+
+
 
 $transition-one: all 0.2s ease-in-out;
 $transition-two: all 0.5s ease-in-out 0.2s;

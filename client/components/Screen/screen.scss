@@ -33,7 +33,9 @@
         align-items: center;
 
         i {
-          margin-right: 8px;
+          margin: 0 8px 4px 0;
+          font-size: 70%;
+          font-style: normal;
         }
 
         p {
@@ -49,6 +51,11 @@
         }
 
         &.active {
+          i {
+            font-size: 130%;
+            margin-left: -5px;
+          }
+          
           p {
             font-size: 18px;
             font-weight: bold;

@@ -52,7 +52,7 @@ const ActiveExerciseList = ({ workout, timeState }: ActiveExerciseListProps) => 
         const isComplete = timeState ? timeState.cycleIndex > index : false;
         const isActive = timeState ? timeState.cycleIndex === index : false;
 
-        let [emoji, emojiLabel] = isComplete ? ['✅', 'completed'] : ['⚫', 'incomplete'];
+        let [emoji, emojiLabel] = isComplete ? ['✅', 'completed'] : ['🔴', 'incomplete'];
         if (isActive) {
           emoji = '💪';
           emojiLabel = 'active';

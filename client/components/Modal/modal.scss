@@ -4,7 +4,7 @@
   position: fixed;
   background: $color-pop;
   transition: $transition-one;
-  color: $color-text;
+  color: $color-text-alt;
 
   &.hidden {
     width: 0;
@@ -54,8 +54,8 @@
   &__action {
     .button {
       border-radius: 50%;
-      border: 2px solid $color-text;
-      color: $color-text;
+      border: 2px solid $color-text-alt;
+      color: $color-text-alt;
       background: $color-pop;
       width: 60px;
       height: 60px;

@@ -13,7 +13,7 @@ const EXERCISES: ExerciseMap = {
     'Calf Raises',
     'Crunches',
     'High Knees',
-    'Jumping jacks',
+    'Jumping Jacks',
     'Lunges',
     'Lying Leg Raises',
     'Mountain Climbers',
